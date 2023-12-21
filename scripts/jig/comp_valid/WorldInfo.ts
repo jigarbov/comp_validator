@@ -1,11 +1,10 @@
-import { Player, system, world } from "@minecraft/server";
+import { Player, system, world,ScriptEventCommandMessageAfterEvent } from "@minecraft/server";
 import { CraftComputer } from "./CraftComputers";
 import { openDualButtonDialogue, openInputDialogue } from "./ScriptDialogue/index";
 import { viewBoardsList } from "./Dialogues/ViewBoardsList";
 import { viewStats } from "./Dialogues/ViewStats";
 
-export const WORLD_INFO_OBJECTIVE = 'jig_ccomp:world_info';
-export const COMPUTER_INFO_OBJECTIVE = 'jig_ccomp:jig_computer.addon_stats';
+export const COMPUTER_INFO_OBJECTIVE = "If it doesn't show here it's broken";
 export const CUSTOM_OBJECTIVES = 'jig_computer.addon_stats';
 
 export class WorldInfo {
@@ -15,8 +14,6 @@ export class WorldInfo {
 
   getObjectives(): Array<string> {
     return [
-      WORLD_INFO_OBJECTIVE,
-      COMPUTER_INFO_OBJECTIVE,
       ...world
         .scoreboard
         .getObjectives()
@@ -34,12 +31,12 @@ const worldInfo = new WorldInfo();
 
 export const initWorldInfo = () => {
     // Init custom world info
-  system.afterEvents.scriptEventReceive.subscribe((event) => {
-    const player = event.initiator;
+  system.afterEvents.scriptEventReceive.subscribe((event: ScriptEventCommandMessageAfterEvent) => {
+    const player = event.sourceEntity;
     const sourceEntity = event.sourceEntity;
-    if (player && player instanceof Player && sourceEntity && CraftComputer.isComputer(sourceEntity)) {
+    if (player && player instanceof Player && sourceEntity) {
       const computer = new CraftComputer(sourceEntity);
-      if (event.id === 'jig_ccomp:show_stats') {
+      if (event.id === 'jig_ccomp:show_stats_validator') {
         system.runTimeout(async () => {
           while (true) {
             const response = await openInputDialogue(viewBoardsList(worldInfo.getObjectives()), player);

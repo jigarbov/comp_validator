@@ -1,6 +1,6 @@
 // === CONFIGURABLE VARIABLES
 
-const bpfoldername = "comp_validator_BP";
+const bpfoldername = "jig_comp_valid_BP";
 const rpfoldername = "comp_validator_RP";
 const useMinecraftPreview = false; // Whether to target the "Minecraft Preview" version of Minecraft vs. the main store version of Minecraft
 const useMinecraftDedicatedServer = false; // Whether to use Bedrock Dedicated Server - see https://www.minecraft.net/download/server/bedrock

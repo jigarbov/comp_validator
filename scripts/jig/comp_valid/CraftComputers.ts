@@ -1,6 +1,5 @@
 import { Dimension, Entity, EntityInventoryComponent, ItemStack, Player, world } from "@minecraft/server";
 import { makeRandomId } from "./Random";
-import { debug } from "./Utils";
 
 const enum COMPUTER_PROPERTIES {
   COMPUTER_ID = 'jig_ccomp:COMPUTER_ID',
@@ -9,8 +8,7 @@ const enum COMPUTER_PROPERTIES {
 }
 
 const VALID_COMPUTERS_TYPES: Array<string> = [
-  'jig_ccomp:computer_old',
-  'jig_ccomp:computer_ok',
+  'minecraft:player',
 ];
 
 export interface CraftComputerEmail {
@@ -44,7 +42,6 @@ export class CraftComputer {
     if (!computerId || typeof computerId !== 'string') {
       computerId = makeRandomId();
       this.setProp(COMPUTER_PROPERTIES.COMPUTER_ID, computerId);
-      debug(`Generating id ${computerId} for new computer`);
     }
 
     let computerName = this.getProp(COMPUTER_PROPERTIES.COMPUTER_NAME);
@@ -68,23 +65,6 @@ export class CraftComputer {
 
   setName(name: string) {
     return this.setProp(COMPUTER_PROPERTIES.COMPUTER_NAME, name);
-  }
-
-  getEmails(): Array<CraftComputerEmail> {
-    return JSON.parse(
-      this.getProp(COMPUTER_PROPERTIES.EMAILS, '[]') as string
-    ) as Array<CraftComputerEmail>;
-  }
-
-  setEmails(emails: Array<CraftComputerEmail>) {
-    this.setProp(COMPUTER_PROPERTIES.EMAILS, JSON.stringify(emails));
-  }
-
-
-  deleteEmail(emailIndex: number) {
-    const emails = this.getEmails();
-    emails.splice(emailIndex, 1);
-    this.setEmails(emails);
   }
 
   say(message: string, player: Player) {
@@ -130,17 +110,6 @@ export class CraftComputers {
     this.computers[computer.getId()] = computer;
   }
 
-  removeComputer(entity: Entity) {
-    if (!CraftComputer.isComputer(entity) && entity.isValid()) {
-      return;
-    }
-
-    const computer = new CraftComputer(entity);
-    const computerId = computer.getId();
-
-    delete this.computers[computerId];
-    debug(`Removing computer ${computerId}`);
-  }
 
   getComputers() {
     return Object.values(this.computers).filter(c => c.computer.isValid());

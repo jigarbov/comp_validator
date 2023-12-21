@@ -19,7 +19,7 @@
       "type": "script",
       "uuid": "4ef1c4d2-7911-4f93-a5bc-9b9d30e137a3",
       "version": [1, 0, 0],
-      "entry": "scripts/jig/ccomp/main.js"
+      "entry": "scripts/jig/comp_valid/main.js"
     }
   ],
   "dependencies": [

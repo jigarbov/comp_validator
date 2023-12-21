@@ -2,12 +2,12 @@ import { DualButtonDialogue } from "../ScriptDialogue/types";
 import { debug, RAW_TEXT, TEXT, TRANSLATE } from "../Utils";
 import { RawMessage, world } from "@minecraft/server";
 import { getScoreOr } from "../Scoreboard";
-import { CUSTOM_OBJECTIVES, WORLD_INFO_OBJECTIVE } from "../WorldInfo";
+import { CUSTOM_OBJECTIVES } from "../WorldInfo";
 
 export const viewStats = (board: string, stats: Array<string>): DualButtonDialogue => ({
   type: "dual_button_dialogue",
   title: RAW_TEXT(
-    TRANSLATE("jig_ccomp:view-stats-board.title")
+    TRANSLATE("Analysis Complete")
   ),
   body: RAW_TEXT(
     TEXT("§l"),TRANSLATE(board),TEXT("§r"),
@@ -18,18 +18,15 @@ export const viewStats = (board: string, stats: Array<string>): DualButtonDialog
   ),
   topButton: {
     name: "other-stats",
-    text: TRANSLATE("jig_ccomp:view-stats-board.other-stats")
+    text: TRANSLATE("Main Menu")
   },
   bottomButton: {
     name: "quit",
-    text: TRANSLATE("jig_ccomp:quit"),
+    text: TRANSLATE("Quit"),
   }
 })
 
 const getCreditsKey = (board: string) => {
-  if (board === WORLD_INFO_OBJECTIVE) {
-    return '';
-  }
 
   return board.replace(CUSTOM_OBJECTIVES, "credits.for.computers");
 }
