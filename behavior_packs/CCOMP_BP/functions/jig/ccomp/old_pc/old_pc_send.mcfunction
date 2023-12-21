@@ -1,1 +1,0 @@
-scriptevent jig_ccomp:send_email

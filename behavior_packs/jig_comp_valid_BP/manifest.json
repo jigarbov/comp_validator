@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "uuid": "1fe2a52f-a1d9-4383-b3a1-c965dc5f5ca6",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 50]
+  },
+  "modules": [
+	{
+		"version": [1, 0, 0],
+		"uuid": "631a67fc-282c-4460-8ed1-6f3e2b44719e",
+		"type": "data"
+	},
+    {
+      "description": "Script resources",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "4ef1c4d2-7911-4f93-a5bc-9b9d30e137a3",
+      "version": [1, 0, 0],
+      "entry": "scripts/jig/ccomp/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.7.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.1.0"
+    }
+  ]
+}

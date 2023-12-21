@@ -1,1 +1,0 @@
-scriptevent jig_ccomp:view_pc_id

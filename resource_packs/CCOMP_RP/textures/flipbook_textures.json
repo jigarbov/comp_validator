@@ -1,8 +1,0 @@
-[
-  {
-    "flipbook_texture": "textures/jig/ccomp/blocks/server_side",
-    "atlas_tile": "jig_ccomp:server_side",
-    "ticks_per_frame": 2,
-    "frames": [ 0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,2,0,0,0,0,0,0,0,3,3,3,3,3,3,3,4,5,6,7,8,9,10,3,3,3,3,3,3,3,3,3,3,3,3,3,0 ]
-  }
-]
