@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "jig_common:nightmare_realm"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 10.0,
+        "fog_end": 36.0,
+        "fog_color": "#4a0000",
+        "render_distance_type": "fixed"
+      },
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 5.0,
+        "fog_color": "#4a0000",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 10.0,
+        "fog_end": 36.0,
+        "fog_color": "#4a0000",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

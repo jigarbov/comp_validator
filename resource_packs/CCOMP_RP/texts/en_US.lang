@@ -1,0 +1,202 @@
+﻿## Jigarbov Productions Inc. made this pack, langfile, and the included map.
+## Copyright Jigarbov Productions Inc. 2023
+pack.name=Craftable Computers RP
+pack.description=All the resources you need for the Craftable Computers Add On.
+
+jig_ccomp.prog_gui_titl.test=Test String for "Program" title
+jig_ccomp.prog_gui_body.test=Test String for "Program" body
+
+item.jig_common:redstone_circuit=Redstone Circuit
+item.jig_common:wrench=Wrench
+item.jig_ccomp:mob_paper=Radar Printout
+item.jig_ccomp:printed_paper=Printed Paper
+item.jig_ccomp:old_bug_paper=Bad Bug Smash Paper
+item.jig_ccomp:ok_bug_paper=Ok Bug Smash Paper
+item.jig_ccomp:good_bug_paper=Good Bug Smash Paper
+item.spawn_egg.entity.jig_ccomp:computer_old.name=Ancient Computer
+item.spawn_egg.entity.jig_ccomp:computer_ok.name=OK Computer
+item.spawn_egg.entity.jig_ccomp:computer_good.name=RGB Computer
+item.spawn_egg.entity.jig_ccomp:portable.name=Portable PC
+item.spawn_egg.entity.jig_ccomp:printer.name=Printer
+item.spawn_egg.entity.jig_ccomp:chair_desk.name=Desk Chair
+item.spawn_egg.entity.jig_ccomp:chair_office.name=Office Chair
+item.spawn_egg.entity.jig_ccomp:chair_gaming.name=Gaming Chair
+entity.jig_ccomp:computer_old.name=Ancient Computer
+entity.jig_ccomp:computer_ok.name=OK Computer
+entity.jig_ccomp:computer_good.name=RGB Computer
+entity.jig_ccomp:portable.name=Portable PC
+entity.jig_ccomp:printer.name=Printer
+entity.jig_ccomp:chair_desk.name=Desk Chair
+entity.jig_ccomp:chair_office.name=Office Chair
+entity.jig_ccomp:chair_gaming.name=Gaming Chair
+tile.jig_ccomp:desk_old_slab.name=Old Desk Top
+tile.jig_ccomp:desk_ok_slab.name=OK Desk Top
+tile.jig_ccomp:desk_good_slab.name=RGB Desk Top
+tile.jig_ccomp:desk_old_right.name=Old Desk Drawers
+tile.jig_ccomp:desk_old_left.name=Old Desk Side
+tile.jig_ccomp:desk_ok_half.name=OK Desk Side
+tile.jig_ccomp:desk_good_half.name=RGB Desk Side
+tile.jig_ccomp:server_block.name=Server
+
+jig_ccomp:world_info=Global Information
+jig_ccomp:deadentities=Entities Died
+jig_ccomp:playerplaceblock=Blocks Placed
+jig_ccomp:playerbreakblock=Blocks Broken
+jig_ccomp:buttonpush=Buttons Pushed
+jig_ccomp:leveraction=Levers Toggled
+jig_ccomp:pressureplatepush=Pressure Plate Triggered
+jig_ccomp:tripwiretrip=Tripwire Tripped
+
+example:jig_computer.addon_stats=Your Addon Here
+example:credits.for.computers=<<Your Addon Stats Here>>
+jig_ccomp:jig_computer.addon_stats=COMPUTERS Stats
+jig_ccomp:keyboards_tapped=Keyboards Tapped
+jig_ccomp:emails_sent=Emails Sent
+jig_ccomp:attachments_sent=Attachments Emailed
+jig_ccomp:printouts=Print Outs
+jig_ccomp:bugs_smashed=Bugs Smashed
+
+jig_ccomp:old_pc_show=List of apps. TEMP
+jig_ccomp:butt.old_pc_stat=Stats
+jig_ccomp:butt.old_pc_bugg=Bug Smash
+jig_ccomp:butt.old_pc_rada=Radar
+jig_ccomp:butt.old_pc_weat=Weather
+
+jig_ccomp:settings=Settings
+
+jig_ccomp:name.computer_old=Old Computer
+
+jig_ccomp:old_pc_main=Hello! What would you like to do today?
+
+jig_ccomp:old_pc_apps=Apps are different programs you can play with and use! What would you like to do?
+jig_ccomp:old_pc_emai=Send and receive emails from other computers!
+jig_ccomp:old_pc_noem=This computer has not received any emails. Send one to a friends computer or a random mob, you might get a reply!
+jig_ccomp:old_pc_pcid=Your PC ID is what other players use to send emails to this terminal.
+
+jig_ccomp:name.bug_smash=BUG SMASH!
+jig_ccomp:bug_smash_title=Welcome to BUG SMASH! %sA bug will appear in the left, center or right of the screen, SMASH IT! AS QUICK AS YOU CAN!!
+jig_ccomp:bug_smash_01=%s\(")/%s-( )-%s/(_)\
+jig_ccomp:bug_smash_02=%s                    \(")/%s                    -( )-%s                    /(_)\
+jig_ccomp:bug_smash_03=%s                                        \(")/%s                                        -( )-%s                                        /(_)\
+jig_ccomp:bug_smash_h1=A HIT!%s     %s     %s\@@@/
+jig_ccomp:bug_smash_h2=A HIT!%s                         %s                         %s                    \@@@/
+jig_ccomp:bug_smash_h3=A HIT!%s                                             %s                                             %s                                        \@@@/
+
+jig_ccomp:bug_smash_hits=A HIT!
+jig_ccomp:bug_smash_miss=A MISS! YOU LOSE!%s\(")/               \(")/               \(")/%s-( )-               -( )-                -( )-%s/(_)\               /(_)\               /(_)\
+jig_ccomp:butt.old_pc_bugs=Start Game
+jig_ccomp:butt.old_pc_hitl=Hit Left
+jig_ccomp:butt.old_pc_hitm=Hit Middle
+jig_ccomp:butt.old_pc_hitr=Hit Right
+jig_ccomp:butt.old_pc_cont=Continue?
+jig_ccomp:butt.old_pc_prin=Print Score
+
+jig_ccomp:butt.old_pc_apps=Apps
+jig_ccomp:butt.old_pc_emai=Email
+jig_ccomp:butt.old_pc_pcid=PC ID
+jig_ccomp:butt.old_pc_exit=Quit
+jig_ccomp:butt.old_pc_show=Start Apps
+jig_ccomp:butt.old_pc_down=Download New
+jig_ccomp:butt.old_pc_dele=Delete Apps
+jig_ccomp:butt.old_pc_read=Read Emails
+jig_ccomp:butt.old_pc_send=Send Emails
+jig_ccomp:butt.old_pc_s_id=Set ID
+jig_ccomp:butt.old_pc_v_id=View ID
+jig_ccomp:butt.old_pc_main=Main Menu
+
+jig_ccomp:email.from=From
+jig_ccomp:email.mailed-by=Originating pc
+jig_ccomp:email.attachment=<<Attachment found>>
+jig_ccomp:email.attachment-downloaded=<<Attachment already downloaded>>
+jig_ccomp:pc-email-read.title=Read Emails
+jig_ccomp:pc-email-read.button.more=Email Options...
+jig_ccomp:pc-email-read.button.close=Close
+jig_ccomp:pc-email-send.title=Send Email
+jig_ccomp:pc-email-send.inputs.to.label=To:
+jig_ccomp:pc-email-send.inputs.attachment.label=Attachment:
+jig_ccomp:pc-email-send.inputs.subject.label=Subject:
+jig_ccomp:pc-email-send.inputs.subject.placeholder=Write your subject here.
+jig_ccomp:pc-email-send.inputs.message.label=Message:
+jig_ccomp:pc-email-send.inputs.message.placeholder=Write your message here.
+jig_ccomp:pc-id-set.title=PC ID
+jig_ccomp:pc-id-set.name.label=PC ID
+jig_ccomp:pc-id-set.name.placeholder=Write your PC name here.
+jig_ccomp:pc-email-send.inputs.attachment.none=No Attachment
+jig_ccomp:pc-email-read-more.body=What would you like to do?
+jig_ccomp:pc-email-read-more.button.print=Print Email
+jig_ccomp:pc-email-read-more.button.download=Download Attachment
+jig_ccomp:pc-email-read-more.button.delete=Delete Email
+jig_ccomp:view-stat-list.title=World Analysis
+jig_ccomp:view-stat-list.board=Welcome to WORLD ANALYSIS! Use the dropdown list below to choose what statistics you would like to see! You might even see statistics about other Add-Ons.
+jig_ccomp:view-stats-board.title=Analysis Complete!
+jig_ccomp:view-stats-board.other-stats=Other Stats
+jig_ccomp:quit=Quit
+jig_ccomp:credits.for.computers=COMPUTERS Add-On by Jigarbov Productions
+jig_ccomp:view-radar.title=Radar Results
+jig_ccomp:view-radar.tamed=Tamed Radar
+jig_ccomp:view-radar.monster=Monster Radar
+jig_ccomp:view-radar.villager=Villager Radar
+jig_ccomp:view-radar.rideable=Rideable Radar. §rNot including monsters, but includes non-player rideable entities.
+jig_ccomp:select-radar.title=Choose Radar Settings
+jig_ccomp:select-radar.radar.villager=Villager Radar
+jig_ccomp:select-radar.radar.tamed=Tamed Radar
+jig_ccomp:select-radar.radar.monster=Monster Radar
+jig_ccomp:select-radar.radar.rideable=Rideable Radar
+jig_ccomp:select-radar.radar=Our radar will return coordinates and other information about mobs in order of distance from the computer.
+jig_ccomp:view-radar.not-found=Nothing Found!
+jig_ccomp:view-radar.other-radar=Change Radar
+jig_ccomp:view-radar.entity.name=Named:
+jig_ccomp:view-weather-forecast.title=Weather Forecast
+jig_ccomp:view-weather-forecast.subtitle=Hello and welcome to todays weather forecast! Turns out, the getWeather function is a little bit broken BUT what we can tell you is the following!
+jig_ccomp:view-weather-forecast.moon-phase=§l§bMoon Phase§r
+jig_ccomp:view-weather-forecast.tonight=If you look outside later tonight you will see that the moon is a
+jig_ccomp:view-weather-forecast.current=Go look outside RIGHT NOW! You can see the moon is currently a
+jig_ccomp:moon.full-moon=§l§bFull Moon§r
+jig_ccomp:moon.waning-gibbous=§l§bWaning Gibbous§r
+jig_ccomp:moon.first-quarter=§l§bFirst Quarter§r
+jig_ccomp:moon.waning-crescent=§l§bWaning Crescent§r
+jig_ccomp:moon.new-moon=§l§bNew Moon§r
+jig_ccomp:moon.waxing-crescent=§l§bWaxing Crescent§r
+jig_ccomp:moon.last-quarter=§l§bLast Quarter§r
+jig_ccomp:moon.waxing-gibbous=§l§bWaxing Gibbous§r
+
+jig_ccomp:view-weather-forecast.future=What about the §efuture weather§r? I'm thinking it'll be...
+jig_ccomp:weather.clear=Clear Skies
+jig_ccomp:weather.raining=Rain
+jig_ccomp:weather.thunder=Thunderstorm
+
+jig_ccomp:email.from.blacksmi.00=Blacksmith
+jig_ccomp:email.body.blacksmi.01.n_=Thanks for your email! To be honest it was hard to read with all the coal dust covering my screen but I'm sure it was lovely. Hmmm... Come trade soon!
+jig_ccomp:email.body.blacksmi.02.n_=Wow another one? You're keen! Hmmm... I don't really have much more to talk about but I did make this really cool sword recently. Maybe I'll show it to you if you come visit.
+jig_ccomp:email.body.blacksmi.03.i.stone_axe=I had some spare coal, thought you could use some. Enjoy!
+jig_ccomp:email.body.blacksmi.04.i.coal=The days are long and my hands hurt from making all these tools. Bet yours hurt too from punching all those trees? Here's an axe to help with that!
+jig_ccomp:email.body.blacksmi.05.n_=This infinite lava is pretty cool. For some reason it never gets cool! Have you ever wondered about that? I sure have.
+jig_ccomp:email.body.cowxxxxx.01.n_=Moo.
+jig_ccomp:email.body.cowxxxxx.02.n_=Moo moo I say!
+jig_ccomp:email.body.cowxxxxx.03.n_=Thank's for your email, it was moo'ving.
+jig_ccomp:email.body.cowxxxxx.04.i.milk=Want some milk? I'm not sure if it travels well but I did attach some to this email for you. I hope none spilled out anywhere!
+jig_ccomp:email.body.cowxxxxx.05.n_=I saw my sister the other day in the field. She was doing super well. I swear she bloomed some new flowers since the last time I saw her. She's very shy though so I wouldn't try to find her.
+jig_ccomp:email.body.zombiexx.01.n_=BRAINS!
+jig_ccomp:email.body.zombiexx.02.n_=HUUUUNGERRRRRR!
+jig_ccomp:email.body.zombiexx.03.i_rotten_flesh=SOOOOMMMMEEEE FLEEEESSSHHHH!!!
+jig_ccomp:email.body.zombiexx.04.n_=HOOOOOWWWSSSS YOOOOUUUUURRRR DAAAAAAYYYY.....????
+jig_ccomp:email.body.zombiexx.05.n_=Dude the internet is so cool. Pretending to be a brainless zombie is one of my favorite things!
+
+
+##extra translations for email client
+##item.jig_ccomp:desk_old_slab=Old Desk Top
+##item.jig_ccomp:desk_ok_slab=OK Desk Top
+##item.jig_ccomp:desk_good_slab=RGB Desk Top
+##item.jig_ccomp:desk_old_right=Old Desk Drawers
+##item.jig_ccomp:desk_old_left=Old Desk Side
+##item.jig_ccomp:desk_ok_half=OK Desk Side
+##item.jig_ccomp:desk_good_half=RGB Desk Side
+##item.jig_ccomp:server_block=Server
+##item.jig_ccomp:computer_old_spawn_egg=Ancient Computer
+##item.jig_ccomp:computer_ok_spawn_egg=OK Computer
+##item.jig_ccomp:computer_good_spawn_egg=RGB Computer
+##item.jig_ccomp:portable_spawn_egg=Portable PC
+##item.jig_ccomp:printer_spawn_egg=Printer
+##item.jig_ccomp:chair_desk_spawn_egg=Desk Chair
+##item.jig_ccomp:chair_office_spawn_egg=Office Chair
+##item.jig_ccomp:chair_gaming_spawn_egg=Gaming Chair

@@ -1,0 +1,70 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "jig_ccomp:desk_old_left",
+            "is_experimental": false, 
+			"menu_category": {
+			  "category": "construction"
+			},
+			"traits": {
+			 "minecraft:placement_direction": {
+			  "enabled_states": ["minecraft:cardinal_direction"]
+			 }
+			}
+		},
+		"components": {
+			"minecraft:collision_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:geometry": {"identifier": "geometry.jig_ccomp.desk_old_left","bone_visibility": {"desk_top_1": true,"desk_top_2": false}},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "jig_ccomp:desk_old_left",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:light_emission": 0,
+			"minecraft:light_dampening": 8,
+			"minecraft:map_color": "#4a2f23"
+		},
+		"permutations": [
+		 { 
+		  "condition": "query.block_state ('minecraft:cardinal_direction') == 'north'",
+		  "components": {
+		   "minecraft:transformation": {
+			"rotation": [0, 0, 0]
+		   },
+		   "minecraft:geometry": {"identifier": "geometry.jig_ccomp.desk_old_left","bone_visibility": {"desk_top_1": false,"desk_top_2": true}}
+		  }
+		 },
+		 { 
+		  "condition": "query.block_state ('minecraft:cardinal_direction') == 'south'",
+		  "components": {
+		   "minecraft:transformation": {
+			"rotation": [0, 180, 0]
+		   }
+		  }
+		 },
+		 { 
+		  "condition": "query.block_state ('minecraft:cardinal_direction') == 'west'",
+		  "components": {
+		   "minecraft:transformation": {
+			"rotation": [0, 90, 0]
+		   },
+		   "minecraft:geometry": {"identifier": "geometry.jig_ccomp.desk_old_left","bone_visibility": {"desk_top_1": false,"desk_top_2": true}}
+		  }
+		 },
+		 { 
+		  "condition": "query.block_state ('minecraft:cardinal_direction') == 'east'",
+		  "components": {
+		   "minecraft:transformation": {
+			"rotation": [0, -90, 0]
+		   }
+		  }
+		 }
+		]
+	   }
+	  }

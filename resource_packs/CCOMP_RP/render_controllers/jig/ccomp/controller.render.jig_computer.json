@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.jig_ccomp.g_computer": {
+			"arrays": {
+				"textures": { 
+					"Array.screen": [
+						"Texture.screen_0",
+						"Texture.screen_1",
+						"Texture.screen_2",
+						"Texture.screen_3",
+						"Texture.screen_4",
+						"Texture.screen_5",
+						"Texture.screen_6",
+						"Texture.screen_7",
+						"Texture.screen_8",
+						"Texture.screen_9"
+					] 
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [{"*": "Material.computer_screen",
+				"seethrough_bits": "Material.seethrough_bits",
+				"semi_panels": "Material.the_panels"}],
+			"textures": ["Array.screen[q.variant]"]
+		},
+		"controller.render.jig_ccomp.computer": {
+			"geometry": "Geometry.default",			
+			"materials": [{"*": "Material.screens",
+				"head": "Material.default",
+				"keyboard": "Material.default",
+				"mouse": "Material.default",
+				"everythingelse": "Material.default",
+				"main": "Material.default"}],
+			"textures": ["Texture.screen_00"]
+		}
+	}
+}

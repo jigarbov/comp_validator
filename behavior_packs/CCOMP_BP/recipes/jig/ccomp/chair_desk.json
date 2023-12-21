@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "jig_ccomp:chair_desk"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#  ",
+      "PPP",
+      "# #"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "P": {
+        "item": "minecraft:dark_oak_planks"
+      }
+    },
+    "result": {
+		"item": "spawn_egg",
+		"data": "query.get_actor_info_id('jig_ccomp:chair_desk')"
+    }
+  }
+}

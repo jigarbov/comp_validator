@@ -1,0 +1,19 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"jig_ccomp:desk_old_right": {"textures": "textures/jig/ccomp/blocks/desk_old_right.png"},
+		"jig_ccomp:desk_old_left": {"textures": "textures/jig/ccomp/blocks/desk_old_left.png"},
+		"jig_ccomp:desk_ok_half": {"textures": "textures/jig/ccomp/blocks/desk_ok_half.png"},
+		"jig_ccomp:desk_good_half": {"textures": "textures/jig/ccomp/blocks/desk_good_half.png"},
+		"jig_ccomp:desk_old_slab": {"textures": "textures/jig/ccomp/blocks/desk_old_slab.png"},
+		"jig_ccomp:desk_ok_slab": {"textures": "textures/jig/ccomp/blocks/desk_ok_slab.png"},
+		"jig_ccomp:desk_ok_half_alt": {"textures": "textures/jig/ccomp/blocks/desk_ok_half_alt.png"},
+		"jig_ccomp:desk_good_slab": {"textures": "textures/jig/ccomp/blocks/desk_good_slab.png"},
+		"jig_ccomp:server_bottom": {"textures": "textures/jig/ccomp/blocks/server_bottom.png"},
+		"jig_ccomp:server_top": {"textures": "textures/jig/ccomp/blocks/server_top.png"},
+		"jig_ccomp:server_side": {"textures": "textures/jig/ccomp/blocks/server_side.png"}
+	}
+}

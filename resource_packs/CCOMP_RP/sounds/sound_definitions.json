@@ -1,0 +1,245 @@
+{
+	"format_version" : "1.14.0",
+	"sound_definitions" : {
+		
+	"jig_common.silence": {
+		"category": "music",
+		"sounds": [
+			"sounds/jig/common/silence"
+		]
+	},
+	"jig_common.dojig": {
+		"category": "ui",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/rnd/dojig",
+				"stream": true
+			}
+		]
+	},
+	"jig_common.level_up": {
+		"category": "ui",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/rnd/level_up",
+				"stream": false
+			}
+		]
+	},
+	"jig_common.suckpop": {
+		"category": "ui",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/suctionpop"
+			}
+		]
+	},
+	"jig_common.didong": {
+		"category": "ui",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/beeps/didong"
+			}
+		]
+	},
+	"jig_common.doding": {
+		"category": "ui",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/beeps/doding"
+			}
+		]
+	},
+	"jig_common.sucking": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/sucking"
+			}
+		]
+	},
+	"jig_common.suckingstart": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/suckingstart"
+			}
+		]
+	},
+	"click.beep": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/clickbeep"
+			}
+		]
+	},
+	"click.beep_down": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/clickbeep_down"
+			}
+		]
+	},
+	"jig_common.starnoise": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/rnd/starnoise"
+			}
+		]
+	},
+	"jig_common.starnoise_down": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/jig/common/rnd/starnoise_down"
+			}
+		]
+	},
+	"jig_common.fart": {
+		"category": "ui",
+		"sounds": [
+			{"name": "sounds/jig/common/rnd/fart1"},
+			{"name": "sounds/jig/common/rnd/fart2"},
+			{"name": "sounds/jig/common/rnd/fart3"},
+			{"name": "sounds/jig/common/rnd/fart4"}
+		]
+	},
+	"jig_common.starnoise_up": {
+		"category": "neutral",
+		"sounds": [
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.42},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.44},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.46},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.48},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.50},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.52},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.54},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.56},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.58},
+			{"name": "sounds/jig/common/rnd/starnoise_up","volume": 0.2,"pitch": 0.60}
+		]
+	},
+	"jig_common.robot_bleeps": {
+		"sounds": [
+			"sounds/jig/common/beeps/robot_bleeps_01",
+			"sounds/jig/common/beeps/robot_bleeps_02",
+			"sounds/jig/common/beeps/robot_bleeps_03",
+			"sounds/jig/common/beeps/robot_bleeps_04",
+			"sounds/jig/common/beeps/robot_bleeps_05"
+		]
+	},
+	"jig_common.metalhitsmall": {
+		"sounds": [
+			"sounds/jig/common/rnd/metalhitsmall1",
+			"sounds/jig/common/rnd/metalhitsmall2",
+			"sounds/jig/common/rnd/metalhitsmall3",
+			"sounds/jig/common/rnd/metalhitsmall4",
+			"sounds/jig/common/rnd/metalhitsmall5",
+			"sounds/jig/common/rnd/metalhitsmall6"
+		]
+	},
+	"jig_common.metalhit": {
+		"sounds": [
+			"sounds/jig/common/rnd/metalhit1",
+			"sounds/jig/common/rnd/metalhit2",
+			"sounds/jig/common/rnd/metalhit3",
+			"sounds/jig/common/rnd/metalhit4"
+		]
+	},
+	"jig_common.clack": {
+		"sounds": [
+			"sounds/jig/common/beeps/clack01",
+			"sounds/jig/common/beeps/clack02",
+			"sounds/jig/common/beeps/clack03",
+			"sounds/jig/common/beeps/clack04"
+		]
+	},
+	"jig_common.metalhitbig": {
+		"sounds": [
+			"sounds/jig/common/rnd/metalhitbig1",
+			"sounds/jig/common/rnd/metalhitbig2",
+			"sounds/jig/common/rnd/metalhitbig3"
+		]
+	},
+	"jig_common.alarm": {
+		"sounds": [
+			"sounds/jig/common/rnd/alarm"
+		]
+	},
+	"jig_common.beeps.say": {
+		"category": "hostile",
+		"sounds": [
+			"sounds/jig/common/beeps/say1",
+			"sounds/jig/common/beeps/say2",
+			"sounds/jig/common/beeps/say3",
+			"sounds/jig/common/beeps/say4"
+		]
+	},
+	"jig_common.beeps.death": {
+		"category": "hostile",
+		"sounds": [
+			"sounds/jig/common/beeps/death"
+		]
+	},
+	"jig_common.beeps.quicker": {
+		"category": "hostile",
+		"sounds": [
+			"sounds/jig/common/beeps/quickerbeeping"
+		]
+	},
+	"jig_common.bleep": {
+		"category": "neutral",
+		"pitch": [0.8,1.2],
+		"sounds": [	{"name": "sounds/jig/common/beeps/bleep"},
+					{"name": "sounds/jig/common/beeps/bleep_01"},
+					{"name": "sounds/jig/common/beeps/bleep_02"},
+					{"name": "sounds/jig/common/beeps/bleep_03"},
+					{"name": "sounds/jig/common/beeps/bleep_04"}]
+	},
+	"jig_common.pcbleep": {
+		"category": "neutral",
+		"pitch": [0.8,1.2],
+		"sounds": [	{"name": "sounds/jig/common/beeps/bleep","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bleep_01","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bleep_02","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bleep_03","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bleep_04","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bleep_05","volume": 0.05}]
+	},
+	"jig_common.bloop": {
+		"category": "neutral",
+		"sounds": [{
+			"name": "sounds/jig/common/beeps/bloop"
+		}]
+	},
+	"jig_common.pcbloop": {
+		"category": "neutral",
+		"pitch": [0.8,1.2],
+		"sounds": [	{"name": "sounds/jig/common/beeps/bloop","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bloop_01","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bloop_02","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bloop_03","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bloop_04","volume": 0.05},
+					{"name": "sounds/jig/common/beeps/bloop_05","volume": 0.05}]
+	},
+	"jig_common.levelsad": {
+		"category": "neutral",
+		"sounds": [{
+			"name": "sounds/jig/common/rnd/levelsad"
+		}]
+	},
+	"jig_ccomp.typing": {
+		"category": "neutral",
+		"sounds": [	{"name": "sounds/jig/ccomp/typing/typing_06_01"},
+					{"name": "sounds/jig/ccomp/typing/typing_06_02"},
+					{"name": "sounds/jig/ccomp/typing/typing_06_03"},
+					{"name": "sounds/jig/ccomp/typing/typing_06_04"},
+					{"name": "sounds/jig/ccomp/typing/typing_06_05"},
+					{"name": "sounds/jig/ccomp/typing/typing_06_06"},
+					{"name": "sounds/jig/ccomp/typing/typing_06_07"}]
+	}
+}
+}

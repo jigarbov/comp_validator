@@ -1,0 +1,1 @@
+say This is a test to make sure I have a function and that it works

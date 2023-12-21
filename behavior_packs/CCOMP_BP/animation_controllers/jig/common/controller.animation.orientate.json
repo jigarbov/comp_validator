@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.jig_ccomp.orientate": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=22.5,ry=67.5] at @s run tp @s ~ ~0.1 ~ 45 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=67.5,ry=112.5] at @s run tp @s ~ ~0.1 ~ 90 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=112.5,ry=157.5] at @s run tp @s ~ ~0.1 ~ 135 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=157.5,ry=180] at @s run tp @s ~ ~0.1 ~ 180 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=-180,ry=-157.5] at @s run tp @s ~ ~0.1 ~ 180 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=-157.5,ry=-112.5] at @s run tp @s ~ ~0.1 ~ -135 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=-112.5,ry=-67.5] at @s run tp @s ~ ~0.1 ~ -90 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=-67.5,ry=-22.5] at @s run tp @s ~ ~0.1 ~ -45 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=-22.5,ry=0] at @s run tp @s ~ ~0.1 ~ 0 0",
+						"/execute as @s[tag=!jig_ccomp.orientated,rym=0,ry=22.5] at @s run tp @s ~ ~0.1 ~ 0 0",
+						"/execute as @s[tag=!jig_ccomp.orientated] at @s run tag @s add jig_ccomp.orientated"
+					]
+				}
+			}
+		}
+	}
+}
+

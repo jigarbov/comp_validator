@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "jig_common:dreamscape_realm"
+		},
+		"distance": {
+			"air": {
+				"fog_start": 0,
+				"fog_end": 64,
+				"fog_color": "#93566b",
+				"render_distance_type": "fixed"
+			},
+			"water": {
+				"fog_start": 0,
+				"fog_end": 8,
+				"fog_color": "#93566b",
+				"render_distance_type": "fixed"
+			},
+			"weather": {
+				"fog_start": 0,
+				"fog_end": 64,
+				"fog_color": "#93566b",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

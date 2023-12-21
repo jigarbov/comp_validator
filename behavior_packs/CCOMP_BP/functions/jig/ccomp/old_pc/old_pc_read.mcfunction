@@ -1,0 +1,1 @@
+scriptevent jig_ccomp:read_emails

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+	  "description": {
+		"identifier": "jig_ccomp:printer",
+		"materials": {
+		  "default": "entity"
+		},
+		"textures": {
+		  "default": "textures/jig/ccomp/entity/printer"
+		},
+		"geometry": {
+		  "default": "geometry.jig_ccomp.printer"
+		},
+		"spawn_egg": {
+			"texture": "jig_ccomp:a_spawn_egg",
+			"texture_index": 7
+		},
+		"render_controllers": [ "controller.render.jig_ccomp.printer" ],
+		"animations": {
+		  "print": "animation.jig_ccomp.printer.print",
+		  "idle":"animation.jig_ccomp.printer.idle",
+		  "open_controller": "controller.animation.jig_ccomp.printer"
+		},
+		"scripts": {
+		  "animate": [
+			"open_controller"
+		  ]
+		}
+	  }
+	}
+  } 
+
+
+
+

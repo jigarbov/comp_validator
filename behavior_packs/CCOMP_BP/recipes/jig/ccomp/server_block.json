@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "jig_ccomp:server_block"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "SSS",
+      "RRR",
+      "SSS"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:sculk"
+      },
+      "R": {
+        "item": "jig_common:redstone_circuit"
+      }
+    },
+	"result": {
+	  "item": "jig_ccomp:server_block"
+	}
+  }
+}

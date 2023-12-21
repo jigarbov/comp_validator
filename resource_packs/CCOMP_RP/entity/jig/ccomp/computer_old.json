@@ -1,0 +1,52 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "jig_ccomp:computer_old",
+			"render_controllers": [
+				"controller.render.jig_ccomp.computer"
+			],
+			"geometry": {
+				"default": "geometry.jig_ccomp.computer_old"
+			},
+			"textures": {
+				"screen_00": "textures/jig/ccomp/entity/computer_a"
+            },
+			"materials": {
+				"default": "entity",
+				"screens": "entity_alphatest"
+			},
+			"spawn_egg": {
+				"texture": "jig_ccomp:a_spawn_egg",
+				"texture_index": 0
+			},
+			"sound_effects": {
+				"typing": "jig_ccomp.typing",
+				"broken_sfx": "jig_ccomp.pcbleep",
+				"finished_beep": "jig_ccomp.pcbloop"
+			},
+			"animations": {
+			  "typing": "animation.jig_ccomp.keyboard_mash",
+			  "computer_controller": "controller.animation.jig_ccomp.computer",
+			  "death_cont":"controller.animation.jig_common.solid_death",
+			  "death":"animation.jig_common.solid_death",
+			  "idle":"animation.jig_ccomp.computer_old.idle",
+			  "erro":"animation.jig_ccomp.computer_old.erro",
+			  "home":"animation.jig_ccomp.computer_old.home",
+			  "emai":"animation.jig_ccomp.computer_old.emai",
+			  "apps":"animation.jig_ccomp.computer_old.apps",
+			  "code":"animation.jig_ccomp.computer_old.code",
+			  "bugt":"animation.jig_ccomp.computer_old.bugt",
+			  "bugo":"animation.jig_ccomp.computer_old.bugo",
+			  "bugs":"animation.jig_ccomp.computer_old.bugs",
+			  "bugl":"animation.jig_ccomp.computer_old.bugl",
+			  "screen_controller":"controller.animation.jig_ccomp.computer_old.screen"
+			},
+			"scripts": {
+			  "animate": [
+				"computer_controller","death_cont","screen_controller"
+			  ]
+			}
+		}
+	}
+}

@@ -1,0 +1,377 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.jig_ccomp.light_level": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_01": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_02": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_03": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_04": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_05": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_06": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_07": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_08": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_09": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_10": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_11": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_12": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_13": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"},
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_14": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						
+						{"light_level_15": "query.property('jig_ccomp:light_level') == 15"}
+					]
+				},
+				"light_level_15": {
+					"on_entry": [
+						"/scriptevent jig_ccomp:update_light_level"
+					],
+					"transitions": [
+						{"default": "query.property('jig_ccomp:light_level') == 0"},
+						{"light_level_01": "query.property('jig_ccomp:light_level') == 1"},
+						{"light_level_02": "query.property('jig_ccomp:light_level') == 2"},
+						{"light_level_03": "query.property('jig_ccomp:light_level') == 3"},
+						{"light_level_04": "query.property('jig_ccomp:light_level') == 4"},
+						{"light_level_05": "query.property('jig_ccomp:light_level') == 5"},
+						{"light_level_06": "query.property('jig_ccomp:light_level') == 6"},
+						{"light_level_07": "query.property('jig_ccomp:light_level') == 7"},
+						{"light_level_08": "query.property('jig_ccomp:light_level') == 8"},
+						{"light_level_09": "query.property('jig_ccomp:light_level') == 9"},
+						{"light_level_10": "query.property('jig_ccomp:light_level') == 10"},
+						{"light_level_11": "query.property('jig_ccomp:light_level') == 11"},
+						{"light_level_12": "query.property('jig_ccomp:light_level') == 12"},
+						{"light_level_13": "query.property('jig_ccomp:light_level') == 13"},
+						{"light_level_14": "query.property('jig_ccomp:light_level') == 14"}
+					]
+				}
+			}
+		}
+	}
+}
+

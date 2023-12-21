@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "jig_ccomp:desk_ok_slab"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "PCP"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:stone_block_slab3",
+		"data": 4
+      },
+      "C": {
+        "item": "minecraft:calcite"
+      }
+    },
+	"result": {
+	  "item": "jig_ccomp:desk_ok_slab",
+	  "count": 3
+	}
+  }
+}

@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.jig_ccomp.printer_reset": {
+			"states": {
+				"default": {
+					"transitions": [
+						{"printing": "query.property('jig_ccomp:printing')"}
+					]
+				},
+				"printing": {
+					"on_entry": [
+						"/scoreboard players add jig_ccomp:printouts jig_ccomp:jig_computer.addon_stats 1",
+						"@s jig_ccomp:has_printout",
+						"@s jig_ccomp:not_printing"
+					],
+					"transitions": [
+						{"default": "1"}
+					]
+				}
+			}
+		},
+		"controller.animation.jig_ccomp.has_paper": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"@s jig_ccomp:not_has_paper"
+					],
+					"transitions": [
+						{"has_paper": "t.val = 0; t.i = 0; loop(27, {t.val = q.is_item_name_any('slot.inventory', t.i, 'minecraft:paper'); t.val ? {return t.val;}; t.i = t.i+1;});" }
+					]
+				},
+				"has_paper": {
+					"on_entry": [
+						"@s jig_ccomp:has_paper"
+					],
+					"transitions": [
+						{"default": "t.i = 0; loop(27, {q.is_item_name_any('slot.inventory', t.i, 'minecraft:paper') ? {return false;}; t.i = t.i+1;}); return true;"}
+					]
+				}
+			}
+		},
+		"controller.animation.jig_ccomp.has_printout": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"@s jig_ccomp:not_has_printout"
+					],
+					"transitions": [
+						{"has_printout": "query.property('jig_ccomp:has_printout')" }
+					]
+				},
+				"has_printout": {
+					"transitions": [
+						{"default": "t.i = 0; loop(27, {q.is_item_name_any('slot.inventory', t.i, 'jig_ccomp:mob_paper','jig_ccomp:printed_paper','jig_ccomp:old_bug_paper','jig_ccomp:ok_bug_paper','jig_ccomp:good_bug_paper') ? {return false;}; t.i = t.i+1;}); return true;"}
+					]
+				}
+			}
+		}
+	}
+}
+

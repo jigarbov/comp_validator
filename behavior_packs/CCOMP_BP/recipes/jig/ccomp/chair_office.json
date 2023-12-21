@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+	  "description": {
+	  "identifier": "jig_ccomp:chair_office"
+	  },
+  
+	  
+	  "tags": [ "crafting_table" ],
+	  "pattern": [
+		"W  ",
+		"LLL",
+		"BIB"
+	  ],
+	  "key": {
+		"B": {
+		  "item": "minecraft:iron_bars"
+		},
+		"L": {
+		  "item": "minecraft:leather"
+		},
+		"I": {
+		  "item": "minecraft:iron_ingot"
+		},
+		"W": {
+		  "item": "minecraft:black_wool"
+		}
+	  },
+	  "result": {
+		  "item": "spawn_egg",
+		  "data": "query.get_actor_info_id('jig_ccomp:chair_office')"
+	  }
+	}
+  }
+  

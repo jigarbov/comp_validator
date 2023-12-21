@@ -1,0 +1,1 @@
+say scriptevent exit the pc

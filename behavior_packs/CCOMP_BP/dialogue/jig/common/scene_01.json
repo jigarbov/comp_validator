@@ -1,0 +1,16 @@
+{
+    "format_version": "1.14",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag":"jig_common:scene_01",
+				"on_open_commands": ["/playsound jig.failure_short @a ~ ~ ~ 1 0.2"],
+                "npc_name":{"rawtext":[{"translate":"jig_common:name.scene"}]},
+                "text":{"rawtext":[{"translate":"jig_common:text.scene_01","with":["\n\n","\n\n"]}]},
+                "buttons":[
+					{"name":{"rawtext":[{"translate":"jig_common:butt.scene_01"}]}}
+                ]
+            }
+        ]
+    }
+}

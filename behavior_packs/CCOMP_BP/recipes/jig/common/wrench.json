@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "jig_common:wrench"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " N",
+      " #N",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:iron_ingot"
+      },
+      "N": {
+        "item": "minecraft:iron_nugget"
+      }
+    },
+    "result": {
+      "item": "jig_common:wrench"
+    }
+  }
+}

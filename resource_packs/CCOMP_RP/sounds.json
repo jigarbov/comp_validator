@@ -1,0 +1,28 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "jig:an_example": {
+                "volume": 2,
+                "pitch": [
+                    0.8,
+                    1.5
+                ],
+                "events": {
+                    "ambient": {
+                        "sound": "jig.robotcreeper.say"
+                    },
+                    "hurt": "jig.robotcreeper.say",
+                    "death": "jig.robotcreeper.death",
+                    "step": {
+                        "sound": "jig.prop",
+                        "volume": 0.25,
+                        "pitch": [
+                            0.8,
+                            1.5
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

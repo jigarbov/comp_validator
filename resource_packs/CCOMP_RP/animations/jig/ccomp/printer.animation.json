@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.jig_ccomp.printer.print": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.64,
+			"bones": {
+				"top": {
+					"rotation": [-105, 0, 0]
+				},
+				"bottom": {
+					"rotation": [15, 0, 0]
+				},
+				"papertop": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.28": [0, -5, -2.5]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.28": [1, 0.8, 1]
+					}
+				},
+				"paperbottom": {
+					"position": {
+						"0.28": [0, 0, 3],
+						"0.6": [0, 0, -7]
+					},
+					"scale": {
+						"0.28": [1, 1, 0.7],
+						"0.6": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.jig_ccomp.printer.idle": {
+			"loop": true,
+			"bones": {
+				"papertop": {
+					"position": [0, 0, 0],
+					"scale": [1, 1, 1]
+				},
+				"paperbottom": {
+					"position": [0, 0, 3],
+					"scale": [1, 1, 0.7]
+				}
+			}
+		}
+	}
+}

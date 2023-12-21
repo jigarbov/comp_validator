@@ -1,0 +1,1 @@
+say scriptevent delete apps

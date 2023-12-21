@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+	  "description": {
+	  "identifier": "jig_common:redstone_circuit"
+	  },
+  
+	  
+	  "tags": [ "crafting_table" ],
+	  "pattern": [
+		"#W#",
+		"WRW",
+		"#W#"
+	  ],
+	  "key": {
+		"R": {
+		  "item": "minecraft:sand"
+		},
+		"W": {
+		  "item": "minecraft:repeater"
+		},
+		"#": {
+		  "item": "minecraft:redstone"
+		}
+	  },
+	  "result": {
+		"item": "jig_common:redstone_circuit"
+	  }
+	}
+  }
+  
