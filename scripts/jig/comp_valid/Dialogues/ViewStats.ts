@@ -12,6 +12,7 @@ export const viewStats = (board: string, stats: Array<string>): DualButtonDialog
   body: RAW_TEXT(
     TEXT("§l"),TRANSLATE(board),TEXT("§r"),
     TEXT("\n"),
+	...isThereNone(board),
     ...buildStats(board, stats),
     TEXT("\n"),
     TRANSLATE(getCreditsKey(board))
@@ -31,6 +32,19 @@ const getCreditsKey = (board: string) => {
   return board.replace(CUSTOM_OBJECTIVES, "credits.for.computers");
 }
 
+const isThereNone = (board: string) => {
+	const objective = world.scoreboard.getObjective(board);
+	if (!objective) {
+		debug(`Couldn't find objective ${board}`);
+		return [];
+	  }
+	let test = objective.getParticipants()
+    if (test.length == 0) {
+        return [
+			TEXT("\n"),TEXT("§7*Beep boop*§r §eThere are no stats to report from this addon yet. Engage with it more and check back later.§r"),TEXT("\n")];
+    }
+      return [];
+  }
 const buildStats = (board: string, stats: Array<string>): Array<RawMessage> => {
   const objective = world.scoreboard.getObjective(board);
   if (!objective) {
