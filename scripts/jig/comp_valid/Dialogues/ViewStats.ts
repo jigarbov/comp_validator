@@ -15,7 +15,7 @@ export const viewStats = (board: string, stats: Array<string>): DualButtonDialog
 	...isThereNone(board),
     ...buildStats(board, stats),
     TEXT("\n"),
-    TRANSLATE(getCreditsKey(board))
+    TRANSLATE(getCreditsKey(board),"\n")
   ),
   topButton: {
     name: "other-stats",
