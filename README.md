@@ -18,7 +18,7 @@ studioname_packname:credits.for.computers=Addon Name is by Studio Name.
 
 ## Validator
 Test your integration by running this validator addon at the same time as your addon and run this command:
-/function jig/common/test
+/function jig/comp_validator/test
 
 If an error shows up something is wrong. check that your objective name ends in jig_computer.addon_stats
 If your entries are not translated, check your lang file in your resource pack
