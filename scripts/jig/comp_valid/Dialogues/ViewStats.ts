@@ -11,7 +11,7 @@ export const viewStats = (board: string, stats: Array<string>): DualButtonDialog
   ),
   body: RAW_TEXT(
     TEXT("§l"),TRANSLATE(board),TEXT("§r"),
-    TEXT("\n"),
+    TEXT("\n\n"),
 	...isThereNone(board),
     ...buildStats(board, stats),
     TEXT("\n"),
@@ -41,7 +41,7 @@ const isThereNone = (board: string) => {
 	let test = objective.getParticipants()
     if (test.length == 0) {
         return [
-			TEXT("\n"),TEXT("§7*Beep boop*§r §eThere are no stats to report from this addon yet. Engage with it more and check back later.§r"),TEXT("\n")];
+			TEXT("§7*Beep boop*§r §eThere are no stats to report from this addon yet. Engage with it more and check back later.§r"),TEXT("\n")];
     }
       return [];
   }
