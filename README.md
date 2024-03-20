@@ -3,54 +3,86 @@ Thanks for being interested in integrating with COMPUTERS - an addon by Jigarbov
 # TLDR Checklist:
 ### Create your scoreboard objective, ensure your unique namespace + :jig_computer.addon_stats
 /scoreboard objectives add studioname_packname:jig_computer.addon_stats dummy
+
+
 ### Update your fake player scores on that objective when something cool happens
-/scoreboard players add “studioname_packname:specific_stata“ “studioname_packname:jig_computer.addon_stats” 1
-/scoreboard players add “studioname_packname:specific_statb“ “studioname_packname:jig_computer.addon_stats” 1
+```/scoreboard players add "studioname_packname:specific_stata" "studioname_packname:jig_computer.addon_stats" 1```
+
+```/scoreboard players add "studioname_packname:specific_statb" "studioname_packname:jig_computer.addon_stats" 1```
+
 or in scripting
-world.scoreboard.getObjective('studioname_packname:jig_computer.addon_stats')?.addScore('studioname_packname:specific_stata', 1);
-world.scoreboard.getObjective('studioname_packname:jig_computer.addon_stats')?.addScore('studioname_packname:specific_statb', 1);
+
+```world.scoreboard.getObjective('studioname_packname:jig_computer.addon_stats')?.addScore('studioname_packname:specific_stata', 1);```
+
+```world.scoreboard.getObjective('studioname_packname:jig_computer.addon_stats')?.addScore('studioname_packname:specific_statb', 1);```
+
 ...(as many as you want)
+# It is preferred that you don't initiate your fake names with 0 and simply add 1 when it's time to add your first variable
+
+
 ### Populate your .lang file contents:
-studioname_packname:jig_computer.addon_stats=Addon Name Stats
-studioname_packname:specific_stata=Cool Stat Name
-studioname_packname:specific_statb=Another Cool Stat!
-studioname_packname:credits.for.computers=Addon Name is by Studio Name.
+```studioname_packname:jig_computer.addon_stats=Addon Name Stats```
+
+```studioname_packname:specific_stata=Cool Stat Name```
+
+```studioname_packname:specific_statb=Another Cool Stat!```
+
+```studioname_packname:credits.for.computers=Addon Name is by Studio Name.```
 
 ## Validator
 Test your integration by running this validator addon at the same time as your addon and run this command:
-/function jig/comp_validator/test
+
+```/function jig/comp_validator/test```
 
 If an error shows up something is wrong. check that your objective name ends in jig_computer.addon_stats
 If your entries are not translated, check your lang file in your resource pack
 
 # HERE'S THE LONG VERSION:
 Add a scoreboard objective on world load, usually added in an initiator function.
-/scoreboard objectives add studioname_packname:jig_computer.addon_stats dummy
+
+```/scoreboard objectives add studioname_packname:jig_computer.addon_stats dummy```
+
 For my studio and addon it might look like:
-/scoreboard objectives add jig_atw:jig_computer.addon_stats dummy
+
+```/scoreboard objectives add jig_atw:jig_computer.addon_stats dummy```
+
 
 ### The “jig_computer.addon_stats” is important, this will be used as a way for our computers to identify scoreboards that can be used with our computers.
 
 Make sure studioname_packname:jig_computer.addon_stats is translated in your lang file:
-studioname_packname:jig_computer.addon_stats=
+
+```studioname_packname:jig_computer.addon_stats=```
+
 Mine would look like:
-jig_atw:jig_computer.addon_stats=ALL THE WOOL Stats
+
+```jig_atw:jig_computer.addon_stats=ALL THE WOOL Stats```
+
 
 Then add your stats as fake player names to that objective that you think players might find interesting! Add as many stats as you like!
-/scoreboard players add “studioname_packname:specific_stat“ “studioname_packname:jig_computer.addon_stats” 1
+
+```/scoreboard players add "studioname_packname:specific_stat" "studioname_packname:jig_computer.addon_stats" 1```
+
 For example, in my “ALL THE WOOL” addon I have balloons. Each time one pops I will add a score to my stats objective. You can add as many as you like, and name them whatever you like as long as you add them to your lang file.
-/scoreboard players add “jig_atw:balloon_pop“ “jig_atw:jig_computer.addon_stats” 1
+
+```/scoreboard players add "jig_atw:balloon_pop" "jig_atw:jig_computer.addon_stats" 1```
+
 
 This can also be done on the scripting side. Basically any action which you think would be fun to measure.
 
-Then you also need to make sure “studioname_packname:specific_stat” is added to your lang file
-studioname_packname:specific_stat=
-jig_atw:balloon_pop=Balloons Popped
+Then you also need to make sure "studioname_packname:specific_stat" is added to your lang file
+
+```studioname_packname:specific_stat=```
+
+```jig_atw:balloon_pop=Balloons Popped```
+
 
 We want to credit and promote you!
 Add one more line to your lang file:
-studioname_packname:credits.for.computers=
-jig_atw:credits.for.computers= Stats provided by ALL THE WOOL addon by Jigarbov Productions.
+
+```studioname_packname:credits.for.computers=```
+
+```jig_atw:credits.for.computers= Stats provided by ALL THE WOOL addon by Jigarbov Productions.```
+
 
 We will add it to the bottom of your stats page, so don’t forget!
 
@@ -76,5 +108,5 @@ Yes, if players want they can still setdisplay the scoreboard without computers.
 
 ### How do I test that it’s working?
 You can validate all your lang files simply by displaying your scoreboard on the sidebar and making sure all your lang translations show up instead of your rawtext by doing:
-“/scoreboard objectives setdisplay sidebar studioname_packname:jig_computer.addon_stats”
+```/scoreboard objectives setdisplay sidebar studioname_packname:jig_computer.addon_stats```
 On submission CR already have the lang file which they go through so it shouldn’t need a specific callout.
