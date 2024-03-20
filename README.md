@@ -2,7 +2,7 @@ Thanks for being interested in integrating with COMPUTERS - an addon by Jigarbov
 
 # TLDR Checklist:
 ### Create your scoreboard objective, ensure your unique namespace + :jig_computer.addon_stats
-/scoreboard objectives add studioname_packname:jig_computer.addon_stats dummy
+```/scoreboard objectives add studioname_packname:jig_computer.addon_stats dummy```
 
 
 ### Update your fake player scores on that objective when something cool happens
