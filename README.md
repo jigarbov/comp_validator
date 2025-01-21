@@ -1,7 +1,7 @@
 Thanks for being interested in integrating with COMPUTERS - an addon by Jigarbov Productions! We are planning many more features such as email blasts and more, but for now, here’s the instructions on how to be added to the analysis module.
 
 # an even shorter TLDR for ts users!
-1. Put the example_helper_class.ts directly into your ts environment.
+1. Put the example_helper_class.ts directly into your ts environment. found here in scripts/jig/comp_valid
 2. import ComputersCompat from "./example_helper_class" into your main
 3. Put ComputersCompat.init() in your main
 4. Add stats to the StatIDs type in example_helper_class as well as your namespace
