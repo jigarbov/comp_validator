@@ -5,6 +5,7 @@ import {
 } from "@minecraft/server";
 import { CraftComputer, CraftComputers } from "./CraftComputers";
 import { initWorldInfo, WorldInfo } from "./WorldInfo";
+import ComputersCompat from "./example_helper_class"
 
 const test_script_event = "jig_ccomp:test_computers_information";
 
@@ -16,6 +17,10 @@ world.afterEvents.playerSpawn.subscribe(async (event) => {
         }
     });
 initWorldInfo();
+
+//examples to use helper class
+//ComputersCompat.init()
+//ComputersCompat.addStat("example_stat_a",1)
 
 const craftComputers = new CraftComputers();
 

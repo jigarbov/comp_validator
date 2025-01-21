@@ -1,5 +1,16 @@
 Thanks for being interested in integrating with COMPUTERS - an addon by Jigarbov Productions! We are planning many more features such as email blasts and more, but for now, here’s the instructions on how to be added to the analysis module.
 
+# an even shorter TLDR for ts users!
+1. Put the example_helper_class.ts directly into your ts environment.
+2. import ComputersCompat from "./example_helper_class" into your main
+3. Put ComputersCompat.init() in your main
+4. Add stats to the StatIDs type in example_helper_class as well as your namespace
+5. then use ComputersCompat.addStat("example_stat_a", 1); anywhere in your code you want to increase a stat!
+
+Easy Peasy! The below are the classic command versions or hardcoded native script versions if you want to learn more about how it works.
+Thank you GM1 for sharing
+
+
 # TLDR Checklist:
 ### Create your scoreboard objective, ensure your unique namespace + :jig_computer.addon_stats
 ```/scoreboard objectives add studioname_packname:jig_computer.addon_stats dummy```
@@ -88,7 +99,7 @@ We will add it to the bottom of your stats page, so don’t forget!
 
 
 # FAQs
-###How do we register our scoreboard objective with your computers?
+### How do we register our scoreboard objective with your computers?
 You don’t need to do anything. We will see the objective with the specific name (jig_computers.addon_stats) and pull it into the drop down list automatically.
 
 ### What if computers isn’t installed and it gets installed after my addon?
